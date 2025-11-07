@@ -1,0 +1,183 @@
+2025-09-28 11:39:14,639 - __main__ - WARNING - Audio functionality not available: No module named 'aifc'
+2025-09-28 11:39:14,649 - __main__ - ERROR - Fatal error: unsupported operand type(s) for +: 'Align' and 'str'
+Traceback (most recent call last):
+  File "C:\Users\aadit\Documents\vs code\ai dungeon master for tabletops rpgs\main.py", line 261, in run
+    self.print_header()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\aadit\Documents\vs code\ai dungeon master for tabletops rpgs\main.py", line 72, in print_header
+    Align.center(header_text) + "\n\n" + Align.center(subtitle),
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+TypeError: unsupported operand type(s) for +: 'Align' and 'str'
+2025-09-28 11:39:47,310 - __main__ - WARNING - Audio functionality not available: No module named 'aifc'
+2025-09-28 11:39:47,316 - __main__ - ERROR - Fatal error: unsupported operand type(s) for +: 'Align' and 'str'
+Traceback (most recent call last):
+  File "C:\Users\aadit\Documents\vs code\ai dungeon master for tabletops rpgs\main.py", line 261, in run
+    self.print_header()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\aadit\Documents\vs code\ai dungeon master for tabletops rpgs\main.py", line 72, in print_header
+    Align.center(header_text) + "\n\n" + Align.center(subtitle),
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+TypeError: unsupported operand type(s) for +: 'Align' and 'str'
+2025-09-28 11:40:26,200 - __main__ - WARNING - Audio functionality not available: No module named 'aifc'
+2025-09-28 11:40:46,936 - __main__ - ERROR - Fatal error: Invalid argument provided to Gemini: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+Traceback (most recent call last):
+  File "C:\Users\aadit\AppData\Local\Programs\Python\Python313\Lib\site-packages\langchain_google_genai\chat_models.py", line 176, in _achat_with_retry
+    return await generation_method(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aadit\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\generativeai\generative_models.py", line 537, in send_message_async
+    response = await self.model.generate_content_async(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\aadit\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\generativeai\generative_models.py", line 269, in generate_content_async
+    response = await self._async_client.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "C:\Users\aadit\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\async_client.py", line 354, in generate_content
+    response = await rpc(
+               ^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\aadit\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\retry\retry_unary_async.py", line 231, in retry_wrapped_func
+    return await retry_target(
+           ^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\aadit\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\retry\retry_unary_async.py", line 163, in retry_target
+    next_sleep = _retry_error_helper(
+        exc,
+    ...<6 lines>...
+        timeout,
+    )
+  File "C:\Users\aadit\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\retry\retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "C:\Users\aadit\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\retry\retry_unary_async.py", line 158, in retry_target
+    return await target()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\aadit\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\grpc_helpers_async.py", line 88, in __await__
+    raise exceptions.from_grpc_error(rpc_error) from rpc_error
+google.api_core.exceptions.InvalidArgument: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\aadit\Documents\vs code\ai dungeon master for tabletops rpgs\main.py", line 273, in run
+    await self.setup_game()
+  File "C:\Users\aadit\Documents\vs code\ai dungeon master for tabletops rpgs\main.py", line 152, in setup_game
+    self.game_state["world"] = await self.world_builder.generate_world()
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aadit\Documents\vs code\ai dungeon master for tabletops rpgs\world_builder.py", line 54, in generate_world
+    response = await self.llm.ainvoke(prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aadit\AppData\Local\Programs\Python\Python313\Lib\site-packages\langchain_core\language_models\chat_models.py", line 186, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\aadit\AppData\Local\Programs\Python\Python313\Lib\site-packages\langchain_core\language_models\chat_models.py", line 554, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+        prompt_messages, stop=stop, callbacks=callbacks, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\aadit\AppData\Local\Programs\Python\Python313\Lib\site-packages\langchain_core\language_models\chat_models.py", line 514, in agenerate
+    raise exceptions[0]
+  File "C:\Users\aadit\AppData\Local\Programs\Python\Python313\Lib\site-packages\langchain_core\language_models\chat_models.py", line 617, in _agenerate_with_cache
+    return await self._agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^^
+        messages, stop=stop, run_manager=run_manager, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\aadit\AppData\Local\Programs\Python\Python313\Lib\site-packages\langchain_google_genai\chat_models.py", line 581, in _agenerate
+    response: genai.types.GenerateContentResponse = await _achat_with_retry(
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\aadit\AppData\Local\Programs\Python\Python313\Lib\site-packages\langchain_google_genai\chat_models.py", line 185, in _achat_with_retry
+    return await _achat_with_retry(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aadit\AppData\Local\Programs\Python\Python313\Lib\site-packages\tenacity\asyncio\__init__.py", line 189, in async_wrapped
+    return await copy(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aadit\AppData\Local\Programs\Python\Python313\Lib\site-packages\tenacity\asyncio\__init__.py", line 111, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aadit\AppData\Local\Programs\Python\Python313\Lib\site-packages\tenacity\asyncio\__init__.py", line 153, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aadit\AppData\Local\Programs\Python\Python313\Lib\site-packages\tenacity\_utils.py", line 99, in inner
+    return call(*args, **kwargs)
+  File "C:\Users\aadit\AppData\Local\Programs\Python\Python313\Lib\site-packages\tenacity\__init__.py", line 398, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
+                                     ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\aadit\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\aadit\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\aadit\AppData\Local\Programs\Python\Python313\Lib\site-packages\tenacity\asyncio\__init__.py", line 114, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aadit\AppData\Local\Programs\Python\Python313\Lib\site-packages\langchain_google_genai\chat_models.py", line 179, in _achat_with_retry
+    raise ChatGoogleGenerativeAIError(
+        f"Invalid argument provided to Gemini: {e}"
+    ) from e
+langchain_google_genai.chat_models.ChatGoogleGenerativeAIError: Invalid argument provided to Gemini: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-10-01 22:22:13,471 - main - WARNING - Audio functionality not available: No module named 'aifc'
+2025-10-01 22:24:19,513 - main - WARNING - Audio functionality not available: No module named 'aifc'
+2025-10-01 22:29:22,970 - main - WARNING - Audio functionality not available: No module named 'aifc'
+2025-10-01 22:38:01,112 - main - WARNING - Audio functionality not available: No module named 'aifc'
+2025-10-01 22:43:41,030 - main - WARNING - Audio functionality not available: No module named 'aifc'
+2025-10-01 22:44:46,970 - world_builder - ERROR - Failed to parse world data as JSON
+2025-10-01 22:51:13,978 - main - WARNING - Audio functionality not available: No module named 'aifc'
+2025-10-01 23:02:47,744 - langchain_google_genai.chat_models - WARNING - Retrying langchain_google_genai.chat_models._achat_with_retry.<locals>._achat_with_retry in 2.0 seconds as it raised DeadlineExceeded: 504 Deadline Exceeded.
+2025-10-01 23:03:49,470 - world_builder - ERROR - Failed to parse world data as JSON
+2025-10-02 18:32:20,925 - main - WARNING - Audio functionality not available: No module named 'aifc'
+2025-10-02 18:34:00,067 - langchain_google_genai.chat_models - WARNING - Retrying langchain_google_genai.chat_models._achat_with_retry.<locals>._achat_with_retry in 2.0 seconds as it raised DeadlineExceeded: 504 The request timed out. Please try again..
+2025-10-02 18:34:18,777 - langchain_google_genai.chat_models - WARNING - Retrying langchain_google_genai.chat_models._achat_with_retry.<locals>._achat_with_retry in 2.0 seconds as it raised DeadlineExceeded: 504 The request timed out. Please try again..
+2025-10-02 18:34:52,208 - main - WARNING - Audio functionality not available: No module named 'aifc'
+2025-10-02 18:35:50,422 - world_builder - ERROR - Failed to parse world data as JSON
+2025-10-02 18:36:47,105 - world_builder - ERROR - Failed to parse world data as JSON
+2025-10-02 18:50:01,210 - langchain_google_genai.chat_models - WARNING - Retrying langchain_google_genai.chat_models._achat_with_retry.<locals>._achat_with_retry in 2.0 seconds as it raised DeadlineExceeded: 504 Deadline Exceeded.
+2025-10-02 18:51:02,588 - langchain_google_genai.chat_models - WARNING - Retrying langchain_google_genai.chat_models._achat_with_retry.<locals>._achat_with_retry in 4.0 seconds as it raised DeadlineExceeded: 504 The request timed out. Please try again..
+2025-10-02 18:52:01,162 - world_builder - ERROR - Failed to parse world data as JSON
+2025-10-02 19:02:18,204 - langchain_google_genai.chat_models - WARNING - Retrying langchain_google_genai.chat_models._achat_with_retry.<locals>._achat_with_retry in 2.0 seconds as it raised DeadlineExceeded: 504 Deadline Exceeded.
+2025-10-02 19:03:17,822 - world_builder - ERROR - Failed to parse world data as JSON
+2025-10-02 19:36:48,683 - world_builder - ERROR - Failed to parse world data as JSON
+2025-10-02 19:49:28,886 - __main__ - INFO - Audio functionality not available: No module named 'aifc'
+2025-10-02 19:50:29,180 - world_builder - ERROR - Failed to parse world data as JSON
+2025-10-02 19:52:53,515 - world_builder - ERROR - Failed to parse world data as JSON
+2025-10-02 20:19:02,691 - world_builder - ERROR - Failed to parse world data as JSON
