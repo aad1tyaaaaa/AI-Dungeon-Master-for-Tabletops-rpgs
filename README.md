@@ -16,6 +16,7 @@
 </p>
 
 
+
 *An interactive AI-powered Dungeon Master that dynamically generates storylines and NPC dialogues for games like Dungeons & Dragons using LangChain, Gemini, and Text-to-Speech technology.*
 
 [Features](#features) • [Technical Stack](#technical-stack) • [Installation](#installation) • [Usage](#usage) • [Architecture](#architecture) • [Configuration](#configuration)
@@ -254,4 +255,5 @@ For issues and questions:
 - Check the troubleshooting guide
 - Open an issue on GitHub
 - Join our Discord community
+
 
