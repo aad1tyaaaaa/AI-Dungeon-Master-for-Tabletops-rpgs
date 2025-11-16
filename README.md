@@ -2,18 +2,16 @@
 
 <div align="center">
 
-<p align="left">
+<p align="center">
 
-  <!-- Version -->
-  <img src="https://img.shields.io/badge/Version-1.0.0-0A84FF?style=for-the-badge&logo=semanticrelease&logoColor=white" />
+<!-- Animated Typing Badge -->
+<img src="https://readme-typing-svg.herokuapp.com?size=24&duration=3000&color=00F7FF&center=true&vCenter=true&width=600&lines=Version+1.0.0;Python+3.8%2B;MIT+License;Powered+by+Your+Tech+Stack" />
 
-  <!-- Python -->
-  <img src="https://img.shields.io/badge/Python-3.8%2B-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-
-  <!-- License -->
-  <img src="https://img.shields.io/badge/License-MIT-34C759?style=for-the-badge&logo=open-source-initiative&logoColor=white" />
+<!-- Animated Gradient Badge -->
+<img src="https://img.shields.io/badge/Status-Active--Development-gradient?style=for-the-badge&logo=github&colorA=ff00cc&colorB=333399" />
 
 </p>
+
 
 
 
@@ -255,5 +253,6 @@ For issues and questions:
 - Check the troubleshooting guide
 - Open an issue on GitHub
 - Join our Discord community
+
 
 
