@@ -2,15 +2,10 @@
 
 <div align="center">
 
-<p align="left">
-
-<img src="https://img.shields.io/badge/Version-1.0.0-8A2BE2?style=for-the-badge&logo=semanticrelease&logoColor=white&colorA=8A2BE2&colorB=4B0082" />
-
-<img src="https://img.shields.io/badge/Python-3.8%2B-FFD43B?style=for-the-badge&logo=python&logoColor=white&colorA=2E3192&colorB=1BFFFF" />
-
-<img src="https://img.shields.io/badge/License-MIT-FDC830?style=for-the-badge&logo=opensourceinitiative&logoColor=white&colorA=F37335&colorB=FDC830" />
-
+<p align="center">
+  <img src="https://img.shields.io/badge/UI-Holographic-ffffff?style=for-the-badge&logo=rainmeter&logoColor=00eaff&colorA=0f0f0f&colorB=1e1e1e" />
 </p>
+
 
 
 
@@ -254,6 +249,7 @@ For issues and questions:
 - Check the troubleshooting guide
 - Open an issue on GitHub
 - Join our Discord community
+
 
 
 
