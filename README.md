@@ -2,14 +2,13 @@
 
 <div align="center">
 
-<p align="center">
-  <img src="https://img.shields.io/badge/UI-Holographic-ffffff?style=for-the-badge&logo=rainmeter&logoColor=00eaff&colorA=0f0f0f&colorB=1e1e1e" />
+<p align="left">
+
+  <img src="https://img.shields.io/badge/Version-1.0.0-FF00FF?style=for-the-badge&logo=semanticrelease&logoColor=FF00FF&labelColor=0D0D0D" />
+  <img src="https://img.shields.io/badge/Python-3.8%2B-39FF14?style=for-the-badge&logo=python&logoColor=39FF14&labelColor=0D0D0D" />
+  <img src="https://img.shields.io/badge/License-MIT-00FFFF?style=for-the-badge&logo=open-source-initiative&logoColor=00FFFF&labelColor=0D0D0D" />
+
 </p>
-
-
-
-
-
 
 *An interactive AI-powered Dungeon Master that dynamically generates storylines and NPC dialogues for games like Dungeons & Dragons using LangChain, Gemini, and Text-to-Speech technology.*
 
@@ -249,6 +248,7 @@ For issues and questions:
 - Check the troubleshooting guide
 - Open an issue on GitHub
 - Join our Discord community
+
 
 
 
